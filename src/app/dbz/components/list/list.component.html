@@ -1,0 +1,21 @@
+<h3>Personajes</h3>
+
+<table>
+    <tr class="title">
+        <td>ID </td>
+        <td>Nombre</td>
+        <td>Poder</td>
+        <td>UUID</td>
+        <td>Acciones</td>
+    </tr>
+
+    <tr *ngFor="let person of caracters; let i = index">
+        <td>{{ (i + 1) }}</td>
+        <td>{{ person.name }}</td>
+        <td>{{ person.power }}</td>
+        <td>{{ person.id }}</td>
+        <td class="center">
+            <button class="danger" (click)="onDeleted(person.id!)">Eliminar</button>
+        </td>
+    </tr>
+</table>

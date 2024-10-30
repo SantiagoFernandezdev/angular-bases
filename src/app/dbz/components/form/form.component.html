@@ -1,0 +1,22 @@
+<form  (ngSubmit)="save()">
+
+    <div>
+        <strong>Nombre</strong>
+        <input 
+        [(ngModel)]="character.name" 
+        type="text" 
+        name="name"
+        placeholder="nombre">
+    </div>
+    <div>
+        <strong>Power</strong>
+        <input 
+        [(ngModel)]="character.power" 
+        type="number"
+        name="power" 
+        placeholder="power">
+    </div>
+
+    <button type="submit" >Agregar Person</button>
+
+</form>
